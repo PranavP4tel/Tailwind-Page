@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #nav{
+            background: rgb(255,193,193);
+            background: linear-gradient(90deg, rgba(255,193,193,1) 0%, rgba(255,206,115,1) 100%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav id="nav" class="p-6 rounded-lg">
+        <!--Container-->
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <div class="w-14 h-14 p-1 rounded-full hover:bg-gray-700 hover:cursor-pointer">
+                <img src="img/bexar.png" class="rounded-full">
+            </div>
+
+            <!--Menu Items-->
+            <div class="hidden space-x-5 md:flex md:text-lg">
+                <a href="#" class="text-rose-700 hover:text-rose-400 ">Home</a></li>
+                <a href="#" class="text-rose-700 hover:text-rose-400 ">About</a></li>
+                <a href="#" class="text-rose-700 hover:text-rose-400 ">Blogs</a></li>
+                <a href="#" class="text-rose-700 hover:text-rose-400 ">Services</a></li>
+                <a href="#" class="text-rose-700 hover:text-rose-400 ">Contacts</a></li>
+            </div>
+
+            <input type="text" name="search" placeholder="Search"
+                class="px-2 py-2 rounded-full shadow bg-gray-100 text-gray text-center focus:outline-none">
+            <button
+                class="rounded-full bg-red-400 hover:bg-red-500 text-white px-6 pt-2 p-3 baseline shadow-xl">Start!</button>
+        </div>
+    </nav>
+
+
+    <!--Top Section-->
+    <div class="flex flex-row text-center">
+        <div class="w-1/2 px-2 pl-6 py-8 bg-red-100 rounded-xl md:py-16">
+            <h2 class="font-bold text-2xl mb-4 md:text-3xl">We are here to</h2>
+            <h1 class="font-bold text-3xl mb-8 md:text-4xl">Plan Your Business</h1>
+            <p class="text-lg mb-10">Some random text to be presented here about the company<br> and it's business
+                information</p>
+            <div>
+                <a href="#" class="rounded-xl p-2 px-4 bg-red-400 hover:bg-red-500 text-white shadow-xl">More
+                    Details</a>
+            </div>
+        </div>
+
+        <div class="w-1/2 rounded bg-[url('img/topback.jpg')] bg-cover bg-center"></div>
+
+    </div>
+
+    <!--Features Section-->
+    <div class="flex flex-row mx-3 mt-10 text-center space-x-6 items-stretch md:mx-14">
+        <div class="flex flex-col space-y-6 bg-red-100 items-center p-4 rounded-xl shadow-xl">
+            <img src="img/one.png" class="rounded-full w-20" />
+            <h2 class="text-xl text-rose-600 font-bold ">Best Practices</h2>
+            <p class="text-gray-600">At Bexar, we follow the best practices to ensure that you have the best service</p>
+        </div>
+
+        <div class="flex flex-col space-y-3 bg-red-100 p-4 px-2 items-center lg:py-7 rounded-xl shadow-xl">
+            <img src="img/one.png" class="rounded-full w-20" />
+            <h2 class="text-xl text-rose-600 font-bold ">24x7 Customer Support</h2>
+            <p class="text-gray-600">We offer customer support round the clock to ensure effecient error recovery</p>
+        </div>
+
+        <div class="flex flex-col space-y-6 bg-red-100 p-4 items-center rounded-xl shadow-xl">
+            <img src="img/one.png" class="rounded-full w-20" />
+            <h2 class="text-xl text-rose-600 font-bold ">32+ Services</h2>
+            <p class="text-gray-600">Our wide range of services cater to the needs of all, from local to global business</p>
+        </div>
+    </div>
+
+
+    <!--Testimonials-->
+    <section class="flex flex-row items-stretch space-x-4 mt-20 mx-4 md:mx-13 md:px-10">
+        <!--Testimonial 1-->
+        <div class="flex flex-col text-center items-center bg-red-100 w-1/3 rounded-lg shadow-xl space-y-6 px-4">
+            <img src="img/avatar-shanai.png" class="h-14 w-14 -mt-6" alt="">
+            <h3 class="text-rose-600 text-lg font-bold">Shanai Mahsen</h3>
+            <p class="text-gray-600 pb-4"> Some text to be displayed as a testimonial by the person</p>
+        </div>
+
+         <!--Testimonial 2-->
+         <div class="flex flex-col text-center items-center bg-red-100 w-1/3 rounded-lg shadow-xl space-y-6 px-4">
+            <img src="img/avatar-richard.png" class="h-14 w-14 -mt-6" alt="">
+            <h3 class="text-rose-600 text-lg font-bold">Richard James</h3>
+            <p class="text-gray-600 pb-4"> Some text to be displayed as a testimonial by the person</p>
+        </div>
+
+         <!--Testimonial 3-->
+         <div class="flex flex-col text-center items-center bg-red-100 w-1/3 rounded-lg shadow-xl space-y-6 px-4">
+            <img src="img/avatar-anisha.png" class="h-14 w-14 -mt-6" alt="">
+            <h3 class="text-rose-600 text-lg font-bold">Anisha Roy</h3>
+            <p class="text-gray-600 pb-4"> Some text to be displayed as a testimonial by the person</p>
+        </div>
+
+
+    </section>
+
+    <!--Join Now Section-->
+    <div class=" rounded-md mx-4 mt-20 bg-rose-400 flex flex-col justify-around items-center p-6 md:flex-row">
+        <h1 class="flex 1 text-white text-3xl "> Join now and avail exciting offers at no extra cost!</h1>
+        <button
+                class="mt-6 rounded-full bg-rose-500 hover:bg-rose-300 text-white px-6 pt-2 p-3 baseline shadow-xl md:mt-0">Join Now!</button> 
+    </div>
+
+
+    <!--Footer Section-->
+    <section class="m-4 mt-2 mb-0 bg-red-400 flex flex-col space-y-3 items-center my-6 py-3 md:flex-row md:px-6 md:items-center md:space-around md:px-auto">
+        <!--Logo and Social Media Icons-->
+        <div class="flex flex-col space-y-3 md:space-y-6 md:w-1/3 md:px-3 md:items-center">
+            <div class="flex flex-row items-center">
+                <h1 class="text-white text-4xl font-bold lg:text-5xl">Bexar</h1>
+                <img src="img/bexar.png" alt="Bexar" class=" mx-4 mt-3 rounded-full w-12 h-12 hover:cursor-pointer lg:w-14 lg:h-14">
+            </div>
+            <div class="flex flex-row items-center space-x-3 md:space-x-auto">
+                <img src="img/icon-facebook.svg" alt="" class="w-6 h-6 cursor-pointer lg:h-8 lg:w-8 ">
+                <img src="img/icon-instagram.svg" alt="" class="w-6 h-6 cursor-pointer lg:h-8 lg:w-8">
+                <img src="img/icon-pinterest.svg" alt="" class="w-6 h-6 cursor-pointer lg:h-8 lg:w-8">
+                <img src="img/icon-youtube.svg" alt="" class="w-6 h-6 cursor-pointer lg:h-8 lg:w-8">
+                <img src="img/icon-twitter.svg" alt="" class="w-6 h-6 cursor-pointer lg:h-8 lg:w-8">
+            </div>
+        </div>
+
+        <!--Sitemap-->
+        <div class="flex flex-row space-x-16 space-y-2 my-3 md:w-1/3 md:text-lg md:items-center lg:justify-center lg:text-xl ">
+            <div class="flex flex-col">
+                <a href="#" class="text-white hover:shadow-xl my-2">Home</a>
+                <a href="#" class="text-white hover:shadow-xl my-2">Blogs</a>
+                <a href="#" class="text-white hover:shadow-xl my-2">Pages</a>
+                <a href="#" class="text-white hover:shadow-xl my-2">Locations</a>
+            </div>
+
+            <div class="flex flex-col ">
+                <a href="#" class="text-white hover:shadow-xl my-2">Services</a>
+                <a href="#" class="text-white hover:shadow-xl my-2">About</a>
+                <a href="#" class="text-white hover:shadow-xl my-2">Contacts</a>
+            </div>
+        </div>
+
+        <!--Search and Copyright-->
+        <div class="flex flex-col justify-between items-center space-x-4 md:flex-col md:w-1/3 ">
+            <div class="flex flex-row space-x-6">
+                <input type="text" class="text-center text-gray-700 rounded-full p-2 focus:shadow-lg focus:outline-none" placeholder="Search" />
+                <button
+                    class="rounded-full bg-red-300 hover:shadow-xl text-white p-2 px-4 shadow-xl">Go!</button> 
+            </div>
+            <p class="text-center text-white text-md my-3">Copyright &copy; 2022. All Rights Reserved</p>
+        </div>
+    </section>
+
+</body>
+</html>
